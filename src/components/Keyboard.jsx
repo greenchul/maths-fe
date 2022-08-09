@@ -1,8 +1,11 @@
-const Keyboard = () => {
+const Keyboard = ({ question, setAnswer }) => {
+  const handleClick = () => {
+    console.log("calling handleClick");
+  };
   return (
     <div>
       <input />
-      <button>Submit</button>
+      <button onClick={handleClick}>Submit</button>
     </div>
   );
 };
