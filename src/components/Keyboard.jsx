@@ -9,7 +9,7 @@ const Keyboard = ({ setAnswer }) => {
   };
   return (
     <div>
-      <input type="number" ref={inputRef} />
+      <input type="number" ref={inputRef} placeholder="answer" />
       <button onClick={handleClick}>Submit</button>
     </div>
   );

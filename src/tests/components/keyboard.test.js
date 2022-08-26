@@ -8,4 +8,11 @@ describe("keyboard component tests", () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+  it("Input box should render correctly", () => {
+    const setAnswer = () => {};
+    render(<Keyboard setAnswer={setAnswer} />);
+    const inputElement = screen.getByPlaceholderText("answer");
+
+    expect(inputElement).toBeInTheDocument();
+  });
 });
