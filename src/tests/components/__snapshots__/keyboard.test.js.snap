@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`keyboard component tests should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      placeholder="answer"
+      type="number"
+    />
+    <button>
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;

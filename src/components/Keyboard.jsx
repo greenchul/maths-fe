@@ -1,8 +1,16 @@
-const Keyboard = () => {
+import { useRef } from "react";
+
+const Keyboard = ({ setAnswer }) => {
+  const inputRef = useRef(null);
+  const handleClick = () => {
+    console.log("calling handleClick");
+    console.log(inputRef.current.value);
+    setAnswer(inputRef.current.value);
+  };
   return (
     <div>
-      <input />
-      <button>Submit</button>
+      <input type="number" ref={inputRef} placeholder="answer" />
+      <button onClick={handleClick}>Submit</button>
     </div>
   );
 };
