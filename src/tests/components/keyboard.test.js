@@ -1,5 +1,5 @@
 import Keyboard from "../../components/Keyboard";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
 describe("keyboard component tests", () => {
   it("should render correctly", () => {
@@ -14,5 +14,13 @@ describe("keyboard component tests", () => {
     const inputElement = screen.getByPlaceholderText("answer");
 
     expect(inputElement).toBeInTheDocument();
+  });
+  it("Should call setAnswer when submit button is clicked", () => {
+    const setAnswer = jest.fn();
+    render(<Keyboard setAnswer={setAnswer} />);
+    const buttonElement = screen.getByText("Submit");
+    fireEvent.click(buttonElement);
+
+    expect(setAnswer).toHaveBeenCalled();
   });
 });
