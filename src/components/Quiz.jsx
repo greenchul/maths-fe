@@ -18,8 +18,11 @@ const Quiz = () => {
     if (question) {
       console.log("New answer submitted", answer);
       console.log("answer is", checkAnswer(question.answer, Number(answer)));
+      if (checkAnswer(question.answer, Number(answer))) {
+        setScore((prev) => prev + 1);
+      }
     }
-  }, [answer]);
+  }, [answer, question]);
 
   return (
     <div>
