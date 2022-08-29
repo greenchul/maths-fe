@@ -22,7 +22,7 @@ const Quiz = () => {
         setScore((prev) => prev + 1);
       }
     }
-  }, [answer]);
+  }, [answer, question]);
 
   return (
     <div>
