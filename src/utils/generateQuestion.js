@@ -13,11 +13,26 @@ const generateAnswer = (a, b, operatorIndex) => {
   }
 };
 
+const aDivideValue = () => {
+  const aValues = [2, 4, 6, 8, 10];
+  const aIndex = Math.floor(Math.random() * 5);
+  console.log(aIndex);
+  return aValues[aIndex];
+};
+
 const generateQuestion = () => {
   const question = {};
-  const a = Math.floor(Math.random() * 10) + 1;
-  const b = Math.floor(Math.random() * 10) + 1;
   const operatorIndex = Math.floor(Math.random() * 4);
+  let a;
+  let b;
+  if (operatorIndex === 3) {
+    b = 2;
+    a = aDivideValue();
+  } else {
+    a = Math.floor(Math.random() * 10) + 1;
+    b = Math.floor(Math.random() * 10) + 1;
+  }
+
   const operators = ["+", "-", "*", "/"];
   const questionExpression = `${a} ${operators[operatorIndex]} ${b}`;
 
