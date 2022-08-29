@@ -6,6 +6,7 @@ const Keyboard = ({ setAnswer }) => {
     console.log("calling handleClick");
     console.log(inputRef.current.value);
     setAnswer(inputRef.current.value);
+    inputRef.current.value = null;
   };
   return (
     <div>
