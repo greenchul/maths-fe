@@ -1,0 +1,12 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-score-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  padding-top: 20px;
+}
