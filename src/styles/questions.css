@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+.questions-container {
+  font-family: "Coiny", cursive;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
