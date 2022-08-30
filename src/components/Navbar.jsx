@@ -3,10 +3,12 @@ import "../styles/navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar-container">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-      </ul>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+      </div>
     </nav>
   );
 };
