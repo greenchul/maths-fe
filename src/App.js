@@ -1,10 +1,11 @@
 import "./App.css";
 import Quiz from "./components/Quiz";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div>
-      <h1>Maths Quiz</h1>
+      <Navbar />
       <Quiz />
     </div>
   );
