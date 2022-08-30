@@ -1,0 +1,24 @@
+.keyboard-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-container input {
+  font-size: 40px;
+}
+
+.keyboard-container input::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.157);
+}
+
+.keyboard-container input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.keyboard-container button {
+  padding-left: 10px;
+  padding-right: 10px;
+}

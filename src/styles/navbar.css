@@ -6,12 +6,21 @@
   align-items: center;
 }
 
+.navbar-container div {
+  width: 600px;
+}
+
 .navbar-container ul {
   display: flex;
-  width: 30%;
+  width: 100%;
+  align-items: center;
 }
 
 .navbar-container li {
   padding-right: 10px;
   list-style-type: none;
+}
+
+.navbar-logo {
+  height: 100px;
 }
