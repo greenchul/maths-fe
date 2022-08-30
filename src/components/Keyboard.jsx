@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import "../styles/keyboard.css";
 
 const Keyboard = ({ setAnswer }) => {
   const inputRef = useRef(null);
@@ -26,7 +27,7 @@ const Keyboard = ({ setAnswer }) => {
     };
   }, []);
   return (
-    <div>
+    <div className="keyboard-container">
       <input type="number" ref={inputRef} placeholder="answer" />
       <button onClick={handleClick}>Submit</button>
     </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import generateQuestion from "../utils/generateQuestion";
 import Keyboard from "./Keyboard";
 import checkAnswer from "../utils/checkAnswer";
+import "../styles/quiz.css";
 
 const Quiz = () => {
   const [question, setQuestion] = useState();
@@ -25,9 +26,11 @@ const Quiz = () => {
   }, [answer, question]);
 
   return (
-    <div>
-      QUESTIONS
-      <p>Score: {score}</p>
+    <div className="quiz-container">
+      <div className="quiz-score-time-container">
+        <p className="quiz-score">Score: {score}</p>
+        <p className="quiz-time">Time:</p>
+      </div>
       {question && <Questions question={question} />}
       <Keyboard setAnswer={setAnswer} />
     </div>

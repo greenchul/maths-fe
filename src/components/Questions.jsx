@@ -1,7 +1,9 @@
+import "../styles/questions.css";
+
 const Questions = ({ question }) => {
   return (
-    <div>
-      <p>Question: {question.questionExpression}</p>
+    <div className="questions-container">
+      <p>{question.questionExpression}</p>
     </div>
   );
 };
