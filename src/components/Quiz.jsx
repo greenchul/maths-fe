@@ -2,6 +2,7 @@ import Questions from "./Questions";
 import { useState, useEffect } from "react";
 import generateQuestion from "../utils/generateQuestion";
 import Keyboard from "./Keyboard";
+import Timer from "./Timer";
 import checkAnswer from "../utils/checkAnswer";
 import "../styles/quiz.css";
 
@@ -29,7 +30,7 @@ const Quiz = () => {
     <div className="quiz-container">
       <div className="quiz-score-time-container">
         <p className="quiz-score">Score: {score}</p>
-        <p className="quiz-time">Time:</p>
+        <Timer />
       </div>
       {question && <Questions question={question} />}
       <Keyboard setAnswer={setAnswer} />
